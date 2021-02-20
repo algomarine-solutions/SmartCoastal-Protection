@@ -1,0 +1,473 @@
+main {
+    padding-left: 10px;
+    margin-left: -25px;
+    padding-right: 6px;
+    margin-right: -6px;
+    background-color: white;
+    z-index: 0;
+    padding-top: 0.1px;
+}
+
+.buatwarna{
+    background-color: #ff650b;
+    margin-right: -5px;
+    padding-bottom: 30px;
+    margin-bottom: -20px;
+}
+
+.yangdihide {
+    margin-left: 10%;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.yangdihide p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+.button-group{
+    float: right;
+    margin-right: 5%;
+}
+
+.submitbtn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #1A1D53;
+    border: none;
+    color: #d6cfcd;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.submitbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.submitbtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+  }
+  
+.submitbtn:hover span {
+    padding-right: 25px;
+}
+  
+.submitbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.submitbtn:focus{
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.backbtn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #1A1D53;
+    border: none;
+    color: #d6cfcd;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.backbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.backbtn span::after {
+    content: '\00ab';
+    position: left;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+  }
+  
+.backbtn:hover span {
+    padding-right: 25px;
+}
+  
+.backbtn:hover span:after {
+    opacity: 1;
+}
+
+.backbtn:focus{
+    outline-color: transparent;
+    outline-style: none;
+}
+
+input[type=text] {
+    padding: 16px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    width: 220px;
+}
+
+select {
+padding: 16px 20px;
+border: none;
+border-radius: 5px;
+background-color: #f1f1f1;
+}
+
+select:focus{
+    outline-color: transparent;
+    outline-style: none;
+}
+
+input[type=number] {
+    padding: 16px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    width: 220px;
+}
+
+input[type=text]:focus{
+    outline-color: transparent;
+    outline-style: none;
+}
+
+input[type=number]:focus{
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.isian {
+    background-color: #ff650b;
+    margin-right: -0.5%;
+}
+
+#deskripsibtn:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    color: #ff650b;
+}
+
+#teoribtn:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    color: #ff650b;
+}
+
+#kkbtn:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    color: #ff650b;
+}
+
+#carabtn:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    color: #ff650b;
+}
+
+.tombolbawah{
+    background-color: #ff650b;
+    border: none;
+    color: white;
+    height: 60px;
+    width: 25%;
+    font-size: 16px;
+    transition: 0.3s;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tombolbawah:focus{
+    background-color: white;
+    color: #ff650b;
+    outline-style: none;
+    outline-color: transparent;
+}
+
+.readmorebtn {
+    background-color: #ff650b;
+    border: none;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+.readmorebtn:focus{
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.deskripsi{
+    background-color:  white;
+    padding-left: 30px;
+    display: none;
+    height: 1180px;
+    padding-top: 60px;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.deskripsi h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #1A1D53;
+    font-size: 18px;
+}
+
+.isideskripsi__editable,
+.ck.isideskripsi__editable[role='textbox'],
+.ck.ck-editor__editable[role='textbox'],
+.ck.isideskripsi[role='textbox'] {
+	background: #fff;
+	font-size: 1em;
+	line-height: 1.6em;
+	min-height: var(--ck-sample-editor-min-height);
+}
+
+.teori{
+    background-color:  white;
+    padding-left: 30px;
+    height: 1180px;
+    display: block;
+    padding-top: 60px;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.teori h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #1A1D53;
+    font-size: 18px;
+}
+
+.isiteori__editable,
+.ck.isiteori__editable[role='textbox'],
+.ck.ck-editor__editable[role='textbox'],
+.ck.isiteori[role='textbox'] {
+	background: #fff;
+	font-size: 1em;
+	line-height: 1.6em;
+	min-height: var(--ck-sample-editor-min-height);
+}
+
+.kk{
+    background-color:  white;
+    padding-left: 30px;
+    display: none;
+    height: 1180px;
+    padding-top: 60px;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.kk h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #1A1D53;
+    font-size: 18px;
+}
+
+.isikk__editable,
+.ck.isikk__editable[role='textbox'],
+.ck.ck-editor__editable[role='textbox'],
+.ck.isikk[role='textbox'] {
+	background: #fff;
+	font-size: 1em;
+	line-height: 1.6em;
+	min-height: var(--ck-sample-editor-min-height);
+}
+
+.cara{
+    background-color:  white;
+    padding-left: 30px;
+    display: none;
+    height: 1180px;
+    padding-top: 60px;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.cara h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #1A1D53;
+    font-size: 18px;
+}
+
+.ck.ck-editor__editable_inline[dir=ltr] {
+    height: 1050px;
+    overflow-y: auto;
+}
+
+.isicara__editable,
+.ck.isicara__editable[role='textbox'],
+.ck.ck-editor__editable[role='textbox'],
+.ck.isicara[role='textbox'] {
+	background: #fff;
+	font-size: 1em;
+	line-height: 1.6em;
+	min-height: var(--ck-sample-editor-min-height);
+}
+
+:root {
+    --ck-sample-editor-min-height: 400px;
+}
+
+.iyaaja {
+    background-color: #ff650b;
+    border: none;
+    color: white;
+    height: 60px;
+    width: 101%;
+    font-size: 16px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: none;
+}
+
+.iyaaja:focus{
+    outline-color: transparent;
+    outline-style: none;
+}
+
+@media(max-width: 757px){
+    .button-group{
+        float: none;
+    }
+    .submitbtn{
+        display: unset;
+        border-radius: 2px;
+        background-color: #1A1D53;
+        border: none;
+        color: #d6cfcd;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px;
+        width: 120px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2px;
+    }
+    .backbtn{
+        display: unset;
+        border-radius: 2px;
+        background-color: #1A1D53;
+        border: none;
+        color: #d6cfcd;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px;
+        width: 120px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2px;
+    }
+    .readmorebtn{
+        margin-left: 42%;
+        font-size: 14px;
+    }
+    select {
+        padding: 14px 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        }
+
+    input[type=number] {
+        padding: 14px 16px;
+        margin: 8px 0;
+        border-radius: 5px;
+        border: none;
+        width: 220px;
+        }
+    input[type=text] {
+        padding: 14px 16px;
+        margin: 8px 0;
+        border-radius: 5px;
+        border: none;
+        width: 220px;
+        }
+    .yangdihide p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 700px){
+    .teori {
+        padding-top: 0;
+        height: 1150px;
+    }
+    .deskripsi {
+        padding-top: 0;
+        height: 1150px;
+    }
+    .kk {
+        padding-top: 0;
+        height: 1150px;
+    }
+    .cara {
+        padding-top: 0;
+        height: 1150px;
+    }
+    .tombolbawah{
+        float:none;
+        width: 101%;
+        padding-left: 30px;
+    }
+    .iyaaja{
+        display: block;
+    }
+    .isian{
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
+@media(max-width: 600px){
+    .readmorebtn{
+        margin-left: 40%;
+    }
+}
+
+@media(max-width: 400px){
+    .readmorebtn{
+        margin-left: 37%;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> - Smart Coastal Protection</title>
+    <link rel="shortcut icon" href="../img/Favicon.png">
+    <link rel="stylesheet" href="../css/auth-header-footer-user.css">
+    <link rel="stylesheet" href="../css/user_hasil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div class="semuaheader">
+            <div class="buatheader">
+                <div class="logo">
+                    <a href="/"><img src="../img/SCP2.jpg" alt="logo" class="iyalogo" width="130px" style="background-size: cover;"></a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="/quiz" type="button" class="ambilquiz"><b><span>Ikuti Quiz</span></b></button></a></li>
+                        <li><a href="/tipebangunan" class="atas"><b>Tipe Bangunan Pantai</b></a></li>
+                        <li><a href="/" class="atas"><b>Home</b></a></li>
+                    </ul>
+                </nav>
+                <button type="button" id="iyaaja" onclick="turuneuy()" class="iyaaja">&#x2630;</button>
+            </div>
+            <div class="tolonglah">
+                <div class="navbarII">
+                    <ul>
+                        <a href="/quiz"><li>Ikuti Quiz</li></a>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/tipebangunan"><li>Tipe Bangunan Pantai</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <!--mulai mainnya disini kawannn-->
+       <div class="dekoraja">
+           <img src="../img/gambaratasan.png" width="100%">
+       </div>
+       <div class="tulisanatas">
+           <h1><%= title %></h1>
+        </div>
+        <div class="bagianbawah" style="height: 700px;">
+            <aside>
+            <ul>
+                <li><button type="button" class="kiriaja" id="tombolteori" onclick="bukateori()"><span>Teori dan Konsep</span></button></li>
+                <li><button type="button" class="kiriaja" id="tomboldeskripsi"onclick="bukadeskripsi()"><span>Deskripsi</span></button></li>
+                <li><button type="button" class="kiriaja" id="tombolkk" onclick="bukakk()"><span>Kelebihan dan Kekurangan</span></button></li>
+                <li><button type="button" class="kiriaja" id="tombolcara"onclick="bukacara()"><span>Cara Pembangunan</span></button></li>
+            </ul>
+            </aside>
+            <div class="tombolbaru">    
+                <button type="button" id="teoribtn" onclick="bukateori()" class="tombolbawah"><span>Teori dan Konsep</span></button>
+                <button type="button" id="deskripsibtn" onclick="bukadeskripsi()" class="tombolbawah"><span>Deskripsi</span></button>
+                <button type="button" id="kkbtn" onclick="bukakk()" class="tombolbawah"><span>Kelebihan dan Kekurangan</span></button>
+                <button type="button" id="carabtn" onclick="bukacara()" class="tombolbawah"><span>Cara Pembangunan</span></button>
+            </div>
+            <button type="button" id="bedaineuy" onclick="turunyok()" class="bedaineuy">&#x2630;</button>
+            <div class="content-pane">
+            <div class="pseudo-class" style="visibility: hidden;">__</div>
+            <div class="kontennya" id="kontenteori">
+                <h2>Teori dan Konsep</h2>
+                <div class="isiannyafix" style="margin-left: 5px; margin-right: 5px;">
+                    <%- teori %>
+                </div>
+            </div>
+            <div class="kontennya" id="kontendeskripsi">
+                <h2>Deskripsi</h2>
+                <div class="isiannyafix" style="margin-left: 5px; margin-right: 5px;">
+                    <%- deskripsi %>
+                </div>
+            </div>
+            <div class="kontennya" id="kontenkk">
+                <h2>Kelebihan dan Kekurangan</h2>
+                <div class="isiannyafix" style="margin-left: 5px; margin-right: 5px;">
+                    <%- lebihkurang %>
+                </div>
+            </div>
+            <div class="kontennya" id="kontencara">
+                <h2>Cara Pembangunan</h2>
+                <div class="isiannyafix" style="margin-left: 5px; margin-right: 5px;">
+                    <%- caraba %>
+                </div>
+            </div>
+            </div>
+        </div>
+       
+        <!--kelar kawan kawan-->
+    </main>
+    <footer>
+        <div class="bawahan1">
+            <div class="info">
+                <a href="http://pkmbrp.undip.ac.id/en/profile/"><img src="../img/logocorem.png" width="160px"></a><br><br>
+                <a href="https://future.algomarinesolution.com/id"><img src="../img/logoalgo.png" width="160px"></a><br><br>
+            </div>
+            <div class="logotengah">
+                <a href="/"><img src="../img/iconeuy.jpg" width="70px" class="logobawah"></a><br><br>
+                <p><b>Smart Coastal Protection <br> Your solution for coastal problem</b></p>
+            </div>
+            <div class="tombolbawahan">
+                <div class="tulisanalamat">
+                    <p><b>Fakultas Perikanan dan Ilmu Kelautan <br> Universitas Diponegoro</b></p>
+                    <p><i class="fa fa-map-marker"></i>Jl. Prof. H. Soedarto, S.H, Tembalang, Kec. Tembalang <br> Kota Semarang, Jawa Tengah</p>
+                    <p>Kode Post 50275 Indonesia</p>
+                </div>
+            </div>
+        </div>
+        <div class="bawahan2">
+            <p class="copyright">© 2020 Smart Coastal Protection. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/user_headerfooter.js"></script>
+    <script type="text/javascript" src="../js/user_hasil.js"></script>
+</body>
+</html>

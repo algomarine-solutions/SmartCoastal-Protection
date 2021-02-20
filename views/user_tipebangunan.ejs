@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Bangunan Pantai - Smart Coastal Protection</title>
+    <link rel="shortcut icon" href="../img/Favicon.png">
+    <link rel="stylesheet" href="../css/auth-header-footer-user.css">
+    <link rel="stylesheet" href="../css/user_tipebangunan.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div class="semuaheader">
+            <div class="buatheader">
+                <div class="logo">
+                    <a href="/"><img src="../img/SCP2.jpg" alt="logo" class="iyalogo" width="130px" style="background-size: cover;"></a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="/quiz" type="button" class="ambilquiz"><b><span>Ikuti Quiz</span></b></button></a></li>
+                        <li><a href="/tipebangunan" class="atas"><b>Tipe Bangunan Pantai</b></a></li>
+                        <li><a href="/" class="atas"><b>Home</b></a></li>
+                    </ul>
+                </nav>
+                <button type="button" id="iyaaja" onclick="turuneuy()" class="iyaaja">&#x2630;</button>
+            </div>
+            <div class="tolonglah">
+                <div class="navbarII">
+                    <ul>
+                        <a href="/quiz"><li>Ikuti Quiz</li></a>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/tipebangunan"><li>Tipe Bangunan Pantai</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <!--mulai mainnya disini kawannn-->
+       <div class="dekoraja">
+        <img src="../img/gambaratasan.png" width="100%">
+        </div>
+       <div class="tulisanatas">
+           <h1>Tipe Bangunan Pantai</h1>
+       </div>
+       <div id="tipesatu" class="kumpulannya">
+           <h2>Breakwater</h2>
+           <section>
+               <%- bre %>
+           </section>
+       </div>
+       <div class="spasidua"></div>
+       <div id="tipedua" class="kumpulannya">
+           <h2>Groin</h2>
+            <section>
+                <%- gro %>
+            </section>
+        </div>
+        <div id="tipetiga" class="kumpulannya">
+            <h2>Jetty</h2>
+            <section>
+                <%- jet %>
+            </section>
+        </div>
+        <div id="tipeempat" class="kumpulannya">
+            <h2>Seawall</h2>
+            <section>
+                <%- sea %>
+            </section>
+        </div>
+        <div id="tipelima" class="kumpulannya">
+            <h2>Lainnya</h2>
+            <section>
+                <%- lai %>
+            </section>
+        </div>
+        <!--kelar kawan kawan-->
+    </main>
+    <footer>
+        <div class="bawahan1">
+            <div class="info">
+                <a href="http://pkmbrp.undip.ac.id/en/profile/"><img src="../img/logocorem.png" width="160px"></a><br><br>
+                <a href="https://future.algomarinesolution.com/id"><img src="../img/logoalgo.png" width="160px"></a><br><br>
+            </div>
+            <div class="logotengah">
+                <a href="/"><img src="../img/iconeuy.jpg" width="70px" class="logobawah"></a><br><br>
+                <p><b>Smart Coastal Protection <br> Your solution for coastal problem</b></p>
+            </div>
+            <div class="tombolbawahan">
+                <div class="tulisanalamat">
+                    <p><b>Fakultas Perikanan dan Ilmu Kelautan <br> Universitas Diponegoro</b></p>
+                    <p><i class="fa fa-map-marker"></i>Jl. Prof. H. Soedarto, S.H, Tembalang, Kec. Tembalang <br> Kota Semarang, Jawa Tengah</p>
+                    <p>Kode Post 50275 Indonesia</p>
+                </div>
+            </div>
+        </div>
+        <div class="bawahan2">
+            <p class="copyright">© 2020 Smart Coastal Protection. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/user_headerfooter.js"></script>
+</body>
+</html>

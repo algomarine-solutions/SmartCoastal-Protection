@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= btitle %> - Smart Coastal Protection</title>
+    <link rel="shortcut icon" href="../img/Favicon.png">
+    <link rel="stylesheet" href="../css/auth-header-footer.css">
+    <link rel="stylesheet" href="../css/tambahbangunanfix.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div class="profile-announcement">
+            <div class="profile-announcement-sec">
+                <ul>
+                    <li>
+                        <div class="profile-section">
+                            <button type="button" id="profilebtn" onclick="openProfileSec()">Hi, Admin</button>
+                            <button type="button" id="profileAndrobtn" onclick="openProfileSec()"><i class="material-icons">person</i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="/"><img src="/img/SCP2.jpg" alt="logo" width="70px" style="background-size: cover;"></a>
+        </div>
+    </header>
+    <div class="setting-logout-pane">
+        <ul>
+            <li><form action="/signout" method="POST"><button type="submit" id="logoutbtn">Log out</button></form> </li>
+        </ul>
+    </div>
+
+    <main>
+       <form action="/admin/editbp?id=<%= bid %>" id="tambahbangunanform" method="POST" onsubmit="return formcheckEdit('<%= bid %>')">
+            <div class="buatwarna">
+                <button class="readmorebtn" onclick="readmorefunction()" id="readmorebtn" type="button">Read More</button>
+                <div class="yangdihide">
+                    <div class="button-group">
+                        <button type="button" class="backbtn" onclick="backtodashbtn()"><span></span>Back</button>
+                        <button type="submit" class="submitbtn"><span>Submit</span></button>
+                    </div>
+                    <p>Nama Bangunan Pantai :</p>
+                    <input type="text" id="title" name="title" value="<%= btitle %>" required placeholder="Tulis nama bangunan">
+                    <p>Kategori :</p>
+                    <%- bcat %>
+                    <p>Biaya (Rp/m<sup>2</sup>) :</p>
+                    <input type="number" id="biaya" name="biaya" min="0" value="<%= bbiaya %>" placeholder="Tulis biaya bangunan" required>
+                    <p>Gambar Profil Bangunan :</p>
+                    <input type="file" accept="image/*" style="color: #ffffff;" id="gambar" onchange="getFile(event)" name="gambar">
+                </div>
+            </div>
+            <button type="button" id="iyaaja" onclick="turuneuy()" class="iyaaja">&#x2630;</button>
+            <div class="isian">    
+                <button type="button" id="teoribtn" onclick="bukateori()" class="tombolbawah">Teori dan Konsep</button>
+                <button type="button" id="deskripsibtn" onclick="bukadeskripsi()" class="tombolbawah">Deskripsi</button>
+                <button type="button" id="kkbtn" onclick="bukakk()" class="tombolbawah">Kelebihan dan Kekurangan</button>
+                <button type="button" id="carabtn" onclick="bukacara()" class="tombolbawah">Cara Pembangunan</button>
+            </div>
+            <div class="deskripsi">
+                <h3>Deskripsi</h3>
+                <textarea name="isideskripsi" class="isideskripsi"><%- bdeskripsi %></textarea>
+            </div>
+            <div class="teori">
+                <h3>Teori dan Konsep</h3>
+                <textarea name="isiteori" class="isiteori"><%- bteori %></textarea>
+            </div>
+            <div class="kk">
+                <h3>Kelebihan dan Kekurangan</h3>
+                <textarea name="isikk" class="isikk"><%- bkk %></textarea>
+            </div>
+            <div class="cara">
+                <h3>Cara Pembangunan</h3>
+                <textarea name="isicara" class="isicara"><%- bcara %></textarea>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <section>
+            <div class="copyright-notice">
+                <p class="copyright">© 2020 SmartCoastal Protection. All Rights Reserved.</p>
+            </div>
+            <div class="pseudo-class">
+                __
+            </div>
+        </section>
+    </footer>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="text/javascript" src="../ckeditor5/build/ckeditor.js"></script>
+    <script type="text/javascript" src="/js/admin_tambahbp.js"></script>
+    <script type="text/javascript" src="/js/admin_home.js"></script>
+</body>
+</html>

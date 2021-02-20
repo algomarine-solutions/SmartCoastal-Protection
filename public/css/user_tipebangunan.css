@@ -1,0 +1,135 @@
+main{
+    display: block;
+    height: 100%;
+    margin-top: -10px;
+}
+
+.tulisanatas{
+    font-family: "Manrope","Segoe UI",sans-serif;
+    background-color: #f5f0e1;
+    height: auto;
+    margin-top: -32px;
+}
+
+.tulisanatas h1{
+    text-align: center;
+    padding-top: 30px;
+    color: #1A1D53;
+    font-size: 40px;
+    padding-bottom: 35px;
+}
+
+#tipesatu{
+    background-color:#ff650b ;
+    color: #f5f0e1;
+}
+#tipedua{
+    background-color:#ffc13b ;
+    color: #1A1D53;
+}
+
+#tipetiga{
+    background-color: #1A1D53 ;
+    color: #f5f0e1;
+}
+#tipeempat{
+    background-color: #f5f0e1 ;
+    color: #1A1D53;
+}
+
+#tipelima{
+    background-color: #c5c5c5 ;
+    color: #1A1D53;
+}
+
+.kumpulannya{
+    font-family: "Manrope","Segoe UI",sans-serif;
+    margin-top: -28px;
+}
+.kumpulannya h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: -5px;
+    padding-top: 20px;
+}
+
+.bangunan{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.gambar{
+    float: left;
+    padding-right: 100px;
+}
+.tulisan{
+    float: right;
+    margin-right: 400px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.tulisan h3{
+    text-align: center;
+    font-size: 25px;
+}
+.tulisan p{
+    text-align: center;
+    font-size: 18px;
+}
+
+@media(max-width:750px){
+    .bangunan{
+        text-align: center;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .gambar{
+        text-align: center;
+        float: none;
+        padding-right: 0px;
+    }
+    .tulisan{
+        text-align: center;
+        float: none;
+        margin-right: 0px;
+    }
+}
+
+@media(max-width:600px){
+    .tulisanatas h1{
+        font-size: 30px;
+    }
+    .kumpulannya h2{
+        font-size: 24px;
+    }
+    .tulisan h3{
+        font-size: 20px;
+    }
+    .tulisan p{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:450px){
+    .tulisanatas h1{
+        font-size: 24px;
+    }
+    .kumpulannya h2{
+        font-size: 20px;
+    }
+    .tulisan h3{
+        font-size: 18px;
+    }
+    .tulisan p{
+        font-size: 14px;
+    }
+}

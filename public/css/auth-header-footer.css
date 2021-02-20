@@ -1,0 +1,282 @@
+html {
+    margin: -10px;
+    overflow-x: hidden;
+}
+body {
+    padding-top: 10px;
+    min-width: 310px;
+    margin-bottom: -30px;
+    overflow: hidden;
+}
+
+header {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    margin-left: -10px;
+    margin-right: -7px;
+    margin-top: -20px;
+    background-color: #1A1D53 ;
+    clear: both;
+}
+
+header .menu-bar-sec {
+    margin-top: -5px;
+    display: none;
+    float: left;
+}
+
+header .menu-bar-sec .menu-bar {
+    background-color: #1A1D53;
+    border: none;
+    color: #f7f7f7;
+    margin-top: -5px;
+    margin-left: -10px;
+    width: 45px;
+    height: 44px;
+    cursor: pointer;
+}
+
+header .menu-bar-sec .menu-bar:hover {
+    background-color: #1e2385;
+}
+
+header .menu-bar-sec .menu-bar:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+header .profile-announcement {
+    margin-top: -15px;
+    color: #f7f7f7;
+    float: right;
+}
+
+header .profile-announcement .profile-announcement-sec ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+header .profile-announcement .profile-announcement-sec ul li {
+    float: left;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .annoucement-section {
+    margin-top: -12px;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .annoucement-section button {
+    height: 30px;
+    width: 38px;
+    background-color: #1A1D53;
+    border: none;
+    height: 48px;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .annoucement-section button:hover {
+    background-color: #1e2385;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .annoucement-section button:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .annoucement-section button:active {
+    background-color: #1e2385;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section {
+    margin-top: -12px;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section #profilebtn {
+    width: 140px;
+    background-color: #1A1D53;
+    border: none;
+    height: 48px;
+    color: #ffffff;
+    text-align: right;
+    font-size: 12pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section #profilebtn:hover {
+    background-color: #1e2385;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section #profilebtn:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section #profilebtn:active {
+    background-color: #1e2385;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section #profileAndrobtn {
+    display: none;
+    background-color: #1A1D53;
+    border: none;
+    width: 50px;
+    height: 48px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section #profileAndrobtn:hover {
+    background-color: #1e2385;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section #profileAndrobtn:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+header .profile-announcement .profile-announcement-sec ul li .profile-section #profileAndrobtn:active {
+    background-color: #1e2385;
+}
+
+.setting-logout-pane {
+    float: right;
+    z-index: 1;
+    width: 160px;
+    height: 0px;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: all 0.2s;
+    position: absolute;
+    right: 20px;
+    top: 51px;
+}
+
+.setting-logout-pane ul {
+    margin-top: 5px;
+    list-style: none;
+}
+
+.setting-logout-pane ul li {
+    margin-left: -40px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.setting-logout-pane ul li:first-child {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.setting-logout-pane ul li form button {
+    height: 40px;
+    width: 100%;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.setting-logout-pane ul li form button:hover {
+    background-color: #f7f7f7;
+}
+
+.setting-logout-pane ul li form button:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.setting-logout-pane ul li form button:active {
+    background-color: #bdbdbd;
+}
+
+.announcement-list {
+    float: right;
+    margin-right: 8vw;
+    width: 300px;
+    height: 500px;
+    z-index: 1;
+    background-color: #919191;
+}
+
+footer {
+    margin-left: -8px;
+    margin-right: -7px;
+    background-color: #1A1D53;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+footer section {
+    color: #f7f7f7;
+}
+
+footer section .privacy-tou {
+    line-height: 0;
+    float: left;
+    margin-left: 10px;
+}
+
+footer section .privacy-tou a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+footer section .privacy-tou span {
+    margin-right: 20px;
+}
+
+footer section .copyright-notice {
+    float: right;
+    margin-right: 10px;
+}
+
+footer section .pseudo-class {
+    margin-bottom: -10px;
+    visibility: hidden;
+    clear: both;
+}
+
+@media (max-width:655px) {
+    header {
+        text-align: center;
+    }
+
+    header .profile-announcement .profile-announcement-sec ul li .profile-section #profilebtn {
+        display: none;
+    }
+
+    header .profile-announcement .profile-announcement-sec ul li .profile-section #profileAndrobtn {
+        display: block;
+    }
+
+    header .profile-announcement .profile-announcement-sec ul {
+        margin-right: 5px;
+    }
+
+    header .menu-bar-sec {
+        display: block;
+    }
+
+    .setting-logout-pane {
+        right: 5px;
+    }
+}
+
+@media (max-width:580px) {
+    footer {
+        text-align: center;
+    }
+
+    footer section .privacy-tou {
+        float: none;
+        margin-bottom: 40px;
+    }
+
+    footer section .copyright-notice {
+        float: none;
+    }
+}
